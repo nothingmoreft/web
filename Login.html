@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<h3 align="center">Login Form</h3>
+</head>
+<script>
+	function login()
+	{
+		var username = f1.txtName.value; 
+		alert('Welcome ' + username);
+		location="Home.html";
+	}
+</script>
+<body>
+	<form name="f1">
+	<table>
+	<tr>
+		<td><label>Username:</label></td>
+		<td><input type="text" name="txtName" required/></td>
+	</tr>
+	<tr>
+		<td><label>Password:</label></td>
+		<td><input type="password" name="txtPass" required/></td>
+	</tr>
+ 	</table>
+ 		<input type="button" value="Sign in" onClick="login()"/>
+		<input type="reset" value="Reset"/>
+	</form>
+</body>
+</html>
