@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Regist</title>
+<h3 align="center">Regist Form</h3>
+</head>
+<script>
+	function regist()
+	{
+		alert('Regist Success!');
+		location="Home.html";
+	}
+</script>
+
+<body>
+
+	<form name="f2">
+	<table>
+	<tr>
+		<td><label>Full name:</label></td>
+		<td><input type="text" name="txtName" required/></td>
+	</tr>
+	<tr>
+		<td><label>Birthday:</label></td>
+		<td><input type="datetime" name="Dob" required/></td>
+	</tr>
+	<tr>
+		<td><label>Phone number:</label></td>
+		<td><input type="number" name="numFone" required/></td>
+	</tr>
+	<tr>
+		<td><label>Email:</label></td>
+		<td><input type="email" name="Mail"/></td>
+	</tr>
+	<tr>
+		<td><label>Password:</label></td>
+		<td><input type="password" name="txtPass" required/></td>
+	</tr>
+	<tr>
+		<td><lable>Confirm Password:</lable></td>
+		<td><input type="password" name="cnfPass" required/></td>
+	</tr>
+	
+ 	</table>
+ 		<input type="button" value="Regist" onClick="regist()"/>
+ 		<input type="reset"/>
+ 	
+	</form>
+</body>
+</html>
