@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>buy</title>
+<link rel="stylesheet" type="text/css" href="menu.css">
+
+</head>
+
+<div id="menu">
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li>
+    <a href="Product.html">Product</a>
+    <ul class="sub-menu">
+       <table>
+       <tr>
+       	<td><li><a href="Mac.html">MAC/魅可</a></li></td>
+       	<td><li><a href="Givenchy.html">Givenchy/纪梵希</a></li></td>
+       </tr>
+      </table>
+      </ul>
+    </li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Login.html">Login</a></li>
+  </ul>
+	</div>
+
+	<script>
+		
+		function setPrice()
+		{
+			var n = f1.lip.selectedIndex;
+			if(n==1)
+			{
+				f1.txtPrice.value = ¥170;
+			}
+			else 
+			{
+				if(n==2)
+				{
+					f1.txtPrice.value = ¥190;
+				}
+				else
+				{
+					if(n==3)
+					{
+						f1.txtPrice.value = ¥180;
+					}
+					else
+					{
+						if(n==4)
+						{
+							f1.txtPrice.value = ¥230;
+						}	
+						else
+						{
+							if(n==5)
+							{
+								f1.txtPrice.value = ¥355;
+							}	
+							else
+							{
+								if(n==6)
+								{
+									f1.txtPrice.value = ¥320;
+								}
+								else
+								{
+									if(n==7)
+									{
+										f1.txtPrice.value = ¥320;
+									}	
+									else
+									{
+										if(n==8)
+										{
+											f1.txtPrice.value = ¥290;
+										}
+										else
+										{
+											alert('Select product!')
+										}
+									}
+								}
+							}
+						}
+					}	
+				}
+			}
+		}
+		
+		function Total()
+		{
+			f1.txtTotal.value = f1.txtPrice.value * f1.numQuantity.value;
+			if(f1.numQuantity.value == "")
+			{
+				alert('Input Quantity!')
+				return;
+			}
+		}
+		function Submit()
+		{
+			alert('Order success!!!')
+		}
+		
+	</script>
+
+<body>
+<h3 align="center">Order Form</h3>
+	<form name="f1">
+	<table>
+	<tr>
+		<td><label>Customer Name:</label></td>
+		<td><input type="text" name="txtName" required/> <font color="red" size="+1">*</font> </td>
+	</tr>
+	<tr>
+		<td><label>Address:</label></td>
+		<td><input type="text" name="txtAdd" required/> <font color="red" size="+1">*</font> </td>
+	</tr>
+	<tr>
+		<td><label>Phone Number:</label></td>
+		<td><input type="number" name="numFone" required/> <font color="red" size="+1">*</font> </td>
+	</tr>
+	<tr>
+		<td><label>Email:</label></td>
+		<td><input type="email" name="txtMail" required/> <font color="red" size="+1">*</font> </td>
+	</tr>
+	<tr>
+		<td><label>Product:</label></td>
+		<td>
+		<select name="lip" onChange="setPrice()">
+			<option>Select ...</option>
+			<option>MAC/魅可 Ruby Woo</option>
+			<option>MAC/魅可 Mini Chili</option>
+			<option>MAC/魅可 Soft Hint</option>
+			<option>MAC/魅可 Mineralize Rich Lipstick</option>
+			<option>Givenchy/纪梵希 Le Rouge Sculpt</option>
+			<option>Givenchy/纪梵希 Rouge Interdit</option>
+			<option>Givenchy/纪梵希 Le Rouge Liquide</option>
+			<option>Givenchy/纪梵希 Gloss Interdit Vinyl</option>
+		</select>
+		</td>
+	</tr>	
+	<tr>
+		<td><label>Product Price:</label></td>
+		<td><input type="text" name="txtPrice" readonly/></td>
+	</tr>	
+	<tr>
+		<td><label>Quantity:</label></td>
+		<td><input type="number" name="numQuantity"/></td>
+	</tr>
+	<tr>
+		<td><label>Amount Total:</label></td>
+		<td><input name="txtTotal" readonly /> <input type="button" value="Total" onClick="Total()"/></td>
+	</tr>
+		
+	</table>
+		
+
+		<input type="button" value="Submit" onClick="Submit()" />
+ 		<input type="reset" value="Reset"/>
+		
+	</form>
+	
+</body>
+</html>
