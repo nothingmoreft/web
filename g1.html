@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>m1</title>
+<link rel="stylesheet" type="text/css" href="menu.css">
+
+</head>
+
+<script>
+	
+	function send()
+	{	
+	if(f1.txtname.value=="")
+	  {
+	     alert("Username is required...");
+	  }
+	else if(f1.txtrating.value=="")
+		{
+			alert("Please check your rate...")
+		}
+	else
+		{
+			alert("Thanks for your feedback")
+			location="m1.html";
+		}
+	
+	}
+	
+	</script>
+
+<body>
+<div id="menu">
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li>
+    <a href="Product.html">Product</a>
+    <ul class="sub-menu">
+       <table>
+       <tr>
+       	<td><li><a href="Mac.html">MAC/魅可</a></li></td>
+       	<td><li><a href="Givenchy.html">Givenchy/纪梵希</a></li></td>
+       </tr>
+      </table>
+      </ul>
+    </li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Login.html">Login</a></li>
+  </ul>
+</div>
+
+<table style="padding-left: 100px">
+<tr>
+<td>
+	<img src="g1.jpg" width="300" height="300" style="padding-left: 100" alt=""/>
+</td>
+<td>
+<h3 align="center">纪梵希小羊皮口红半哑光唇膏 豆沙色正品 304</h3>
+<fieldset style="width: 480px">
+	<h4>
+	Brand/品牌名称: Givenchy/纪梵希 <br>
+	Product Name/产品名称: Givenchy Le Rouge Sculpt/纪梵希"小羊皮" <br>
+	Origin/产地: France/法国
+	</h4>
+</fieldset>
+<a href="buy.html">
+<input align="middle" style="margin-left: 150px" name="buy" type="button" value="Buy">
+</a></td>
+</tr>
+</table>
+
+<table>
+	<div>
+<form name="f1">
+<fieldset style="width: 90%;margin-left:auto; margin-right: auto; margin-bottom: 10px">
+	<legend align="left" style="font-size: 30px;"><strong>Feedback:</strong></legend>
+	<label style="margin-left: 200px">Username: </label>
+	<input type="text" name="txtname" required/><br/><br/>
+    <p><label style="margin-left: 227px">Email: </label><input type="textmail" required/></p><br/>
+    <p><label style="margin-left: 225px">Phone: </label><input type="textphone" required /></p><br/>
+    <p><label style="margin-left: 200px">How do you rate our products: </label></p><br/>
+    <input type="radio" name="txtrating" value = "poor" style="margin-left: 120px"> Poor 
+	<input type="radio" name="txtrating" value = "good" style="margin-left: 50px"> Good 
+	<input type="radio" name="txtrating" value = "very good" style="margin-left: 50px"> Very Good 
+	<input type="radio" name="txtrating" value = "excellent" style="margin-left: 50px"> Excellent 
+<br><br>
+	<p><label style="margin-left: 50px">Other comment: </label></p>
+    <textarea style="width: 500px; height: 100px; margin-left: 100px"></textarea><br/><br/>
+	<input style="margin-left: 300px" type="button" value="send" onClick="send()" />
+	</fieldset>
+</form>
+	</div>
+</table>
+
+<img style="padding-left: 150px" src="gg1.1.jpg" width="780" height="600" alt=""/>
+<img style="padding-left: 150px" src="gg1.jpg" width="750" height="600" alt=""/>
+<img src="given.jpg" width="1050" height="650" alt=""/>
+
+<hr>
+	<footer style="background-color: aquamarine">
+		
+			<font color="#6A6969" style="margin: 60px">
+			网络文化经营许可证：文网文[2010]040号 | 增值电信业务经营许可证：浙B2-20080224-1 | 信息网络传播视听节目许可证：1109364号
+			</font>
+		<h3 align="center">
+		Contact: (+86) 020-85592818 - (+86) 020-06166666 - (+86) 13708280188 <br>
+		Wechat: <img src="Screenshot_20181030-095228_WeChat.jpg" width="80" height="80" alt=""/>
+		</h3>
+	</footer>
+
+</body>
+</html>
